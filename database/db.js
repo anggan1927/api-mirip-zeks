@@ -3,15 +3,15 @@ var __path = process.cwd(),
      { color } = require(__path + '/lib/color.js')
 
 // Connection URL
-var url = 'https://kuhong-api.herokuapp.com';
+var url = 'https://betabotz-api.herokuapp.com';
 try {
-if(url == 'https://kuhong-api.herokuapp.com') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
+if(url == 'https://betabotz-api.herokuapp.com') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
 } catch (e) {
 	return;
 	}
 var db = monk(url);
 
-db.then(() => {
+https://betabotz-api.herokuapp.comdb.then(() => {
   console.log(color('Connected correctly to server, Kuhong-API','green'))
 })
 .catch ((e) => {
